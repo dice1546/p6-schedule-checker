@@ -1,0 +1,1239 @@
+[
+  {
+    "file": "data/aspose-events-example.xer",
+    "p6Version": "8.3",
+    "exportDate": "2015-06-10",
+    "encoding": "utf-8",
+    "counts": {
+      "tables": 10,
+      "rowLines": 312,
+      "activities": 83,
+      "activitiesInScope": 83,
+      "relationships": 86,
+      "brokenRows": 0,
+      "warnings": 2
+    },
+    "issues": [
+      {
+        "severity": "warning",
+        "code": "blank_key",
+        "line": 11,
+        "table": "PROJECT",
+        "message": "PROJECT row has a blank proj_id"
+      },
+      {
+        "severity": "warning",
+        "code": "unknown_calendar",
+        "line": 72,
+        "table": "TASK",
+        "message": "83 activities use calendar (blank), which is not in the file; float converted at 8h per day (first on this line)"
+      }
+    ],
+    "checks": {
+      "missingLinks": {
+        "count": 4,
+        "noPredecessor": 2,
+        "noSuccessor": 3,
+        "findings": [
+          {
+            "line": 72,
+            "code": "A1000",
+            "name": "Mau & Ago business",
+            "status": "Active",
+            "detail": "No predecessor and no successor",
+            "floatDays": 125
+          },
+          {
+            "line": 73,
+            "code": "A1010",
+            "name": "Define business vision",
+            "status": "NotStart",
+            "detail": "No predecessor",
+            "floatDays": 0
+          },
+          {
+            "line": 87,
+            "code": "A1150",
+            "name": "Evaluate realistic initial market share",
+            "status": "NotStart",
+            "detail": "No successor",
+            "floatDays": 108
+          },
+          {
+            "line": 154,
+            "code": "A1820",
+            "name": "Start up the business",
+            "status": "NotStart",
+            "detail": "No successor",
+            "floatDays": 0
+          }
+        ]
+      },
+      "negativeFloat": {
+        "count": 0,
+        "findings": []
+      },
+      "highFloat": {
+        "count": 5,
+        "thresholdDays": 44,
+        "findings": [
+          {
+            "line": 72,
+            "code": "A1000",
+            "name": "Mau & Ago business",
+            "status": "Active",
+            "detail": "125 d total float",
+            "floatDays": 125
+          },
+          {
+            "line": 84,
+            "code": "A1120",
+            "name": "Assess market size and stability",
+            "status": "NotStart",
+            "detail": "110 d total float",
+            "floatDays": 110
+          },
+          {
+            "line": 85,
+            "code": "A1130",
+            "name": "Estimate the competition",
+            "status": "NotStart",
+            "detail": "110 d total float",
+            "floatDays": 110
+          },
+          {
+            "line": 86,
+            "code": "A1140",
+            "name": "Assess needed resource availability",
+            "status": "NotStart",
+            "detail": "108 d total float",
+            "floatDays": 108
+          },
+          {
+            "line": 87,
+            "code": "A1150",
+            "name": "Evaluate realistic initial market share",
+            "status": "NotStart",
+            "detail": "108 d total float",
+            "floatDays": 108
+          }
+        ]
+      }
+    },
+    "floatBuckets": [
+      {
+        "label": "Negative",
+        "count": 0,
+        "flag": "negative"
+      },
+      {
+        "label": "0 (critical)",
+        "count": 72,
+        "flag": null
+      },
+      {
+        "label": "0–10 d",
+        "count": 3,
+        "flag": null
+      },
+      {
+        "label": "10–44 d",
+        "count": 3,
+        "flag": null
+      },
+      {
+        "label": "Over 44 d",
+        "count": 5,
+        "flag": "high"
+      }
+    ],
+    "floatUnknown": 0,
+    "synthetic": false
+  },
+  {
+    "file": "data/harbour-pointe.xer",
+    "p6Version": "17.12",
+    "exportDate": "2018-06-23",
+    "encoding": "utf-8",
+    "counts": {
+      "tables": 44,
+      "rowLines": 2126,
+      "activities": 131,
+      "activitiesInScope": 113,
+      "relationships": 212,
+      "brokenRows": 0,
+      "warnings": 0
+    },
+    "issues": [],
+    "checks": {
+      "missingLinks": {
+        "count": 3,
+        "noPredecessor": 1,
+        "noSuccessor": 2,
+        "findings": [
+          {
+            "line": 389,
+            "code": "EC2430",
+            "name": "Substantial Completion - All TCO",
+            "status": "NotStart",
+            "detail": "No successor",
+            "floatDays": 0
+          },
+          {
+            "line": 439,
+            "code": "EC1420",
+            "name": "Start Garage",
+            "status": "NotStart",
+            "detail": "No predecessor",
+            "floatDays": 174.4
+          },
+          {
+            "line": 512,
+            "code": "EC1610",
+            "name": "Curbs & Paving",
+            "status": "NotStart",
+            "detail": "No successor",
+            "floatDays": 671.9
+          }
+        ]
+      },
+      "negativeFloat": {
+        "count": 0,
+        "findings": []
+      },
+      "highFloat": {
+        "count": 86,
+        "thresholdDays": 44,
+        "findings": [
+          {
+            "line": 518,
+            "code": "EC1600",
+            "name": "Site Cleanup",
+            "status": "Active",
+            "detail": "826.3 d total float",
+            "floatDays": 826.3
+          },
+          {
+            "line": 503,
+            "code": "EC1200",
+            "name": "Roadway Pavers",
+            "status": "Active",
+            "detail": "805.4 d total float",
+            "floatDays": 805.4
+          },
+          {
+            "line": 516,
+            "code": "EC1270",
+            "name": "Finish Paving, Striping and Signs",
+            "status": "NotStart",
+            "detail": "805.4 d total float",
+            "floatDays": 805.4
+          },
+          {
+            "line": 512,
+            "code": "EC1610",
+            "name": "Curbs & Paving",
+            "status": "NotStart",
+            "detail": "671.9 d total float",
+            "floatDays": 671.9
+          },
+          {
+            "line": 506,
+            "code": "EC1440",
+            "name": "Electric to Building 2 Power Vault",
+            "status": "NotStart",
+            "detail": "542 d total float",
+            "floatDays": 542
+          },
+          {
+            "line": 496,
+            "code": "EC1180",
+            "name": "Fab & Delivery",
+            "status": "Active",
+            "detail": "511.9 d total float",
+            "floatDays": 511.9
+          },
+          {
+            "line": 497,
+            "code": "EC1280",
+            "name": "Erect Precast Structure",
+            "status": "NotStart",
+            "detail": "511.9 d total float",
+            "floatDays": 511.9
+          },
+          {
+            "line": 498,
+            "code": "EC1590",
+            "name": "Fire Protection and Lighting",
+            "status": "NotStart",
+            "detail": "511.9 d total float",
+            "floatDays": 511.9
+          },
+          {
+            "line": 499,
+            "code": "EC1680",
+            "name": "Finishes and Striping",
+            "status": "NotStart",
+            "detail": "511.9 d total float",
+            "floatDays": 511.9
+          },
+          {
+            "line": 500,
+            "code": "EC2190",
+            "name": "Complete Garage",
+            "status": "NotStart",
+            "detail": "511.9 d total float",
+            "floatDays": 511.9
+          },
+          {
+            "line": 501,
+            "code": "EC2060",
+            "name": "Punch List Garage",
+            "status": "NotStart",
+            "detail": "511.9 d total float",
+            "floatDays": 511.9
+          },
+          {
+            "line": 502,
+            "code": "EC2180",
+            "name": "Complete Garage 2",
+            "status": "NotStart",
+            "detail": "511.9 d total float",
+            "floatDays": 511.9
+          },
+          {
+            "line": 508,
+            "code": "EC1750",
+            "name": "Electric to Building 1 Power Vault",
+            "status": "NotStart",
+            "detail": "502.4 d total float",
+            "floatDays": 502.4
+          },
+          {
+            "line": 411,
+            "code": "EC1820",
+            "name": "Building 2 Elevators Complete",
+            "status": "NotStart",
+            "detail": "497 d total float",
+            "floatDays": 497
+          },
+          {
+            "line": 438,
+            "code": "EC1780",
+            "name": "Roof Complete",
+            "status": "NotStart",
+            "detail": "497 d total float",
+            "floatDays": 497
+          },
+          {
+            "line": 492,
+            "code": "EC2040",
+            "name": "Building 1 Elevators Complete",
+            "status": "NotStart",
+            "detail": "430.4 d total float",
+            "floatDays": 430.4
+          },
+          {
+            "line": 510,
+            "code": "EC2290",
+            "name": "Curbs & Paving",
+            "status": "NotStart",
+            "detail": "429.4 d total float",
+            "floatDays": 429.4
+          },
+          {
+            "line": 415,
+            "code": "EC1670",
+            "name": "Unit Finishes Building North - Floor 2",
+            "status": "NotStart",
+            "detail": "412 d total float",
+            "floatDays": 412
+          },
+          {
+            "line": 416,
+            "code": "EC1700",
+            "name": "Unit Finishes Building South - Floor 2",
+            "status": "NotStart",
+            "detail": "412 d total float",
+            "floatDays": 412
+          },
+          {
+            "line": 417,
+            "code": "EC1790",
+            "name": "Unit Finishes Building North - Floor 3",
+            "status": "NotStart",
+            "detail": "412 d total float",
+            "floatDays": 412
+          },
+          {
+            "line": 418,
+            "code": "EC1850",
+            "name": "Unit Finishes Building South - Floor 3",
+            "status": "NotStart",
+            "detail": "412 d total float",
+            "floatDays": 412
+          },
+          {
+            "line": 419,
+            "code": "EC1910",
+            "name": "Unit Finishes Building North - Floor 4",
+            "status": "NotStart",
+            "detail": "412 d total float",
+            "floatDays": 412
+          },
+          {
+            "line": 420,
+            "code": "EC1950",
+            "name": "Unit Finishes Building South - Floor 4",
+            "status": "NotStart",
+            "detail": "412 d total float",
+            "floatDays": 412
+          },
+          {
+            "line": 514,
+            "code": "EC2260",
+            "name": "Entry Feature/Sign Wall",
+            "status": "NotStart",
+            "detail": "405.4 d total float",
+            "floatDays": 405.4
+          },
+          {
+            "line": 515,
+            "code": "EC2250",
+            "name": "Fountain/Water Feature",
+            "status": "NotStart",
+            "detail": "394.4 d total float",
+            "floatDays": 394.4
+          },
+          {
+            "line": 482,
+            "code": "EC2230",
+            "name": "Install Railings",
+            "status": "NotStart",
+            "detail": "377.4 d total float",
+            "floatDays": 377.4
+          },
+          {
+            "line": 480,
+            "code": "EC1740",
+            "name": "Mobilize Scaffolding",
+            "status": "NotStart",
+            "detail": "370.4 d total float",
+            "floatDays": 370.4
+          },
+          {
+            "line": 443,
+            "code": "EC2280",
+            "name": "Fire Protection and Lighting",
+            "status": "NotStart",
+            "detail": "362.4 d total float",
+            "floatDays": 362.4
+          },
+          {
+            "line": 444,
+            "code": "EC2310",
+            "name": "Finishes, Barrier Cables & Striping",
+            "status": "NotStart",
+            "detail": "362.4 d total float",
+            "floatDays": 362.4
+          },
+          {
+            "line": 445,
+            "code": "EC2400",
+            "name": "Complete Garage",
+            "status": "NotStart",
+            "detail": "362.4 d total float",
+            "floatDays": 362.4
+          },
+          {
+            "line": 446,
+            "code": "EC2380",
+            "name": "Punchlist Garage",
+            "status": "NotStart",
+            "detail": "362.4 d total float",
+            "floatDays": 362.4
+          },
+          {
+            "line": 447,
+            "code": "EC2390",
+            "name": "Complete Garage 1",
+            "status": "NotStart",
+            "detail": "362.4 d total float",
+            "floatDays": 362.4
+          },
+          {
+            "line": 469,
+            "code": "EC1830",
+            "name": "Install Backing & Cauld Windows Floor1",
+            "status": "NotStart",
+            "detail": "359.4 d total float",
+            "floatDays": 359.4
+          },
+          {
+            "line": 470,
+            "code": "EC1890",
+            "name": "Install Backing & Cauld Windows Floor 2",
+            "status": "NotStart",
+            "detail": "352.4 d total float",
+            "floatDays": 352.4
+          },
+          {
+            "line": 481,
+            "code": "EC2320",
+            "name": "Shell Complete",
+            "status": "NotStart",
+            "detail": "347.4 d total float",
+            "floatDays": 347.4
+          },
+          {
+            "line": 511,
+            "code": "EC2340",
+            "name": "Curbs & Paving",
+            "status": "NotStart",
+            "detail": "347.4 d total float",
+            "floatDays": 347.4
+          },
+          {
+            "line": 471,
+            "code": "EC1930",
+            "name": "Install Backing & Cauld Windows Floor 3",
+            "status": "NotStart",
+            "detail": "342.4 d total float",
+            "floatDays": 342.4
+          },
+          {
+            "line": 410,
+            "code": "EC2370",
+            "name": "Final Inspections and Punchlist",
+            "status": "NotStart",
+            "detail": "338 d total float",
+            "floatDays": 338
+          },
+          {
+            "line": 412,
+            "code": "EC2240",
+            "name": "Tenant Finishes for Clubhouse Areas",
+            "status": "NotStart",
+            "detail": "338 d total float",
+            "floatDays": 338
+          },
+          {
+            "line": 413,
+            "code": "EC1550",
+            "name": "Unit Finishes Building North - Floor 1",
+            "status": "NotStart",
+            "detail": "338 d total float",
+            "floatDays": 338
+          },
+          {
+            "line": 414,
+            "code": "EC1630",
+            "name": "Unit Finishes Building South - Floor 1",
+            "status": "NotStart",
+            "detail": "338 d total float",
+            "floatDays": 338
+          },
+          {
+            "line": 435,
+            "code": "EC1400",
+            "name": "Place Mechanical Equipment Supports",
+            "status": "NotStart",
+            "detail": "338 d total float",
+            "floatDays": 338
+          },
+          {
+            "line": 436,
+            "code": "EC1530",
+            "name": "Built-Up Asphalt Roofing",
+            "status": "NotStart",
+            "detail": "338 d total float",
+            "floatDays": 338
+          },
+          {
+            "line": 465,
+            "code": "EC1730",
+            "name": "Install Exterior Windows and Sliding Glass Doors Floor 1",
+            "status": "NotStart",
+            "detail": "332.4 d total float",
+            "floatDays": 332.4
+          },
+          {
+            "line": 466,
+            "code": "EC1800",
+            "name": "Install Exterior Windows and Sliding Glass Doors Floor 2",
+            "status": "NotStart",
+            "detail": "332.4 d total float",
+            "floatDays": 332.4
+          },
+          {
+            "line": 467,
+            "code": "EC1880",
+            "name": "Install Exterior Windows and Sliding Glass Doors Floor 3",
+            "status": "NotStart",
+            "detail": "332.4 d total float",
+            "floatDays": 332.4
+          },
+          {
+            "line": 468,
+            "code": "EC1920",
+            "name": "Install Exterior Windows and Sliding Glass Doors Floor 4",
+            "status": "NotStart",
+            "detail": "332.4 d total float",
+            "floatDays": 332.4
+          },
+          {
+            "line": 472,
+            "code": "EC1960",
+            "name": "Install Backing & Cauld Windows Floor 4",
+            "status": "NotStart",
+            "detail": "332.4 d total float",
+            "floatDays": 332.4
+          },
+          {
+            "line": 473,
+            "code": "EC1940",
+            "name": "Stucco Bands",
+            "status": "NotStart",
+            "detail": "332.4 d total float",
+            "floatDays": 332.4
+          },
+          {
+            "line": 474,
+            "code": "EC1970",
+            "name": "Stucco Grey",
+            "status": "NotStart",
+            "detail": "332.4 d total float",
+            "floatDays": 332.4
+          },
+          {
+            "line": 475,
+            "code": "EC2050",
+            "name": "Stucco Finish Coat",
+            "status": "NotStart",
+            "detail": "332.4 d total float",
+            "floatDays": 332.4
+          },
+          {
+            "line": 476,
+            "code": "EC2130",
+            "name": "Caulk",
+            "status": "NotStart",
+            "detail": "332.4 d total float",
+            "floatDays": 332.4
+          },
+          {
+            "line": 477,
+            "code": "EC2160",
+            "name": "Stucco Band Trim",
+            "status": "NotStart",
+            "detail": "332.4 d total float",
+            "floatDays": 332.4
+          },
+          {
+            "line": 478,
+            "code": "EC2220",
+            "name": "Paint Exterior",
+            "status": "NotStart",
+            "detail": "332.4 d total float",
+            "floatDays": 332.4
+          },
+          {
+            "line": 479,
+            "code": "EC2300",
+            "name": "Demobilize Scaffolding",
+            "status": "NotStart",
+            "detail": "332.4 d total float",
+            "floatDays": 332.4
+          },
+          {
+            "line": 493,
+            "code": "EC2330",
+            "name": "Courtyard Walks and Amenities",
+            "status": "NotStart",
+            "detail": "332.4 d total float",
+            "floatDays": 332.4
+          },
+          {
+            "line": 448,
+            "code": "EC2420",
+            "name": "Complete Building 2",
+            "status": "NotStart",
+            "detail": "296.4 d total float",
+            "floatDays": 296.4
+          },
+          {
+            "line": 483,
+            "code": "EC2000",
+            "name": "Unit Finishes Building North - Floor 1",
+            "status": "NotStart",
+            "detail": "296.4 d total float",
+            "floatDays": 296.4
+          },
+          {
+            "line": 484,
+            "code": "EC2030",
+            "name": "Unit Finishes Building South - Floor 1",
+            "status": "NotStart",
+            "detail": "296.4 d total float",
+            "floatDays": 296.4
+          },
+          {
+            "line": 485,
+            "code": "EC2070",
+            "name": "Unit Finishes Building North - Floor 2",
+            "status": "NotStart",
+            "detail": "296.4 d total float",
+            "floatDays": 296.4
+          },
+          {
+            "line": 486,
+            "code": "EC2120",
+            "name": "Unit Finishes Building South - Floor 2",
+            "status": "NotStart",
+            "detail": "296.4 d total float",
+            "floatDays": 296.4
+          },
+          {
+            "line": 487,
+            "code": "EC2150",
+            "name": "Unit Finishes Building North - Floor 3",
+            "status": "NotStart",
+            "detail": "296.4 d total float",
+            "floatDays": 296.4
+          },
+          {
+            "line": 488,
+            "code": "EC2170",
+            "name": "Unit Finishes Building South - Floor 3",
+            "status": "NotStart",
+            "detail": "296.4 d total float",
+            "floatDays": 296.4
+          },
+          {
+            "line": 489,
+            "code": "EC2200",
+            "name": "Unit Finishes Building North - Floor 4",
+            "status": "NotStart",
+            "detail": "296.4 d total float",
+            "floatDays": 296.4
+          },
+          {
+            "line": 490,
+            "code": "EC2210",
+            "name": "Unit Finishes Building South - Floor 4",
+            "status": "NotStart",
+            "detail": "296.4 d total float",
+            "floatDays": 296.4
+          },
+          {
+            "line": 491,
+            "code": "EC2410",
+            "name": "Final Inspections and Punchlist",
+            "status": "NotStart",
+            "detail": "296.4 d total float",
+            "floatDays": 296.4
+          },
+          {
+            "line": 461,
+            "code": "EC1720",
+            "name": "Place Mechanical Equipment Supports",
+            "status": "NotStart",
+            "detail": "189.4 d total float",
+            "floatDays": 189.4
+          },
+          {
+            "line": 462,
+            "code": "EC1860",
+            "name": "Built-Up Asphalt Roofing",
+            "status": "NotStart",
+            "detail": "189.4 d total float",
+            "floatDays": 189.4
+          },
+          {
+            "line": 408,
+            "code": "EC2140",
+            "name": "Shell Complete",
+            "status": "NotStart",
+            "detail": "189 d total float",
+            "floatDays": 189
+          },
+          {
+            "line": 409,
+            "code": "EC1990",
+            "name": "Install Railings",
+            "status": "NotStart",
+            "detail": "189 d total float",
+            "floatDays": 189
+          },
+          {
+            "line": 439,
+            "code": "EC1420",
+            "name": "Start Garage",
+            "status": "NotStart",
+            "detail": "174.4 d total float",
+            "floatDays": 174.4
+          },
+          {
+            "line": 440,
+            "code": "EC1430",
+            "name": "Shop Drawings, Review & Approval",
+            "status": "NotStart",
+            "detail": "174.4 d total float",
+            "floatDays": 174.4
+          },
+          {
+            "line": 441,
+            "code": "EC1810",
+            "name": "Fab & Delivery",
+            "status": "NotStart",
+            "detail": "174.4 d total float",
+            "floatDays": 174.4
+          },
+          {
+            "line": 442,
+            "code": "EC2090",
+            "name": "Erect Precast Structure",
+            "status": "NotStart",
+            "detail": "174.4 d total float",
+            "floatDays": 174.4
+          },
+          {
+            "line": 449,
+            "code": "EC1640",
+            "name": "Roof Slab/Collar Beam",
+            "status": "NotStart",
+            "detail": "174.4 d total float",
+            "floatDays": 174.4
+          },
+          {
+            "line": 454,
+            "code": "EC1290",
+            "name": "Third Floor Slab & Collar Beam",
+            "status": "Active",
+            "detail": "174.4 d total float",
+            "floatDays": 174.4
+          },
+          {
+            "line": 455,
+            "code": "EC1320",
+            "name": "Third Floor Masonry Structure",
+            "status": "NotStart",
+            "detail": "174.4 d total float",
+            "floatDays": 174.4
+          },
+          {
+            "line": 456,
+            "code": "EC1330",
+            "name": "Fourth Floor Slab & Collar Beam",
+            "status": "NotStart",
+            "detail": "174.4 d total float",
+            "floatDays": 174.4
+          },
+          {
+            "line": 457,
+            "code": "EC1380",
+            "name": "Fourth Floor Masonry Structure",
+            "status": "NotStart",
+            "detail": "174.4 d total float",
+            "floatDays": 174.4
+          },
+          {
+            "line": 458,
+            "code": "EC1480",
+            "name": "Roof Slab",
+            "status": "NotStart",
+            "detail": "174.4 d total float",
+            "floatDays": 174.4
+          },
+          {
+            "line": 459,
+            "code": "EC1620",
+            "name": "Stair and Elevator Masonry Structure",
+            "status": "NotStart",
+            "detail": "174.4 d total float",
+            "floatDays": 174.4
+          },
+          {
+            "line": 460,
+            "code": "EC1710",
+            "name": "Place Roof Trusses and Sheathing",
+            "status": "NotStart",
+            "detail": "174.4 d total float",
+            "floatDays": 174.4
+          },
+          {
+            "line": 463,
+            "code": "EC1870",
+            "name": "Felt and Tile Roofing",
+            "status": "NotStart",
+            "detail": "174.4 d total float",
+            "floatDays": 174.4
+          },
+          {
+            "line": 464,
+            "code": "EC2020",
+            "name": "Roof Complete",
+            "status": "NotStart",
+            "detail": "174.4 d total float",
+            "floatDays": 174.4
+          },
+          {
+            "line": 434,
+            "code": "EC1390",
+            "name": "Place Roof Trusses and Sheathing",
+            "status": "NotStart",
+            "detail": "110 d total float",
+            "floatDays": 110
+          },
+          {
+            "line": 437,
+            "code": "EC1540",
+            "name": "Felt and Tile Roofing",
+            "status": "NotStart",
+            "detail": "110 d total float",
+            "floatDays": 110
+          }
+        ]
+      }
+    },
+    "floatBuckets": [
+      {
+        "label": "Negative",
+        "count": 0,
+        "flag": "negative"
+      },
+      {
+        "label": "0 (critical)",
+        "count": 23,
+        "flag": null
+      },
+      {
+        "label": "0–10 d",
+        "count": 0,
+        "flag": null
+      },
+      {
+        "label": "10–44 d",
+        "count": 4,
+        "flag": null
+      },
+      {
+        "label": "Over 44 d",
+        "count": 86,
+        "flag": "high"
+      }
+    ],
+    "floatUnknown": 0,
+    "synthetic": false
+  },
+  {
+    "file": "test/fixtures/damaged.xer",
+    "p6Version": "8.3",
+    "exportDate": "2015-06-10",
+    "encoding": "utf-8",
+    "counts": {
+      "tables": 10,
+      "rowLines": 311,
+      "activities": 81,
+      "activitiesInScope": 81,
+      "relationships": 79,
+      "brokenRows": 9,
+      "warnings": 3
+    },
+    "issues": [
+      {
+        "severity": "warning",
+        "code": "blank_key",
+        "line": 11,
+        "table": "PROJECT",
+        "message": "PROJECT row has a blank proj_id"
+      },
+      {
+        "severity": "warning",
+        "code": "unknown_calendar",
+        "line": 72,
+        "table": "TASK",
+        "message": "81 activities use calendar (blank), which is not in the file; float converted at 8h per day (first on this line)"
+      },
+      {
+        "severity": "error",
+        "code": "short_row",
+        "line": 82,
+        "table": "TASK",
+        "message": "Row has 54 fields, table defines 60 (truncated, or a line break inside a text field)"
+      },
+      {
+        "severity": "error",
+        "code": "short_row",
+        "line": 92,
+        "table": "TASK",
+        "message": "Row has 14 fields, table defines 60 (truncated, or a line break inside a text field)"
+      },
+      {
+        "severity": "error",
+        "code": "orphan_line",
+        "line": 93,
+        "table": "TASK",
+        "message": "Line does not start with a record marker (starts \"irm decision to proceed\t\t0\t0\t0\"); usually the tail of a row split by a line break"
+      },
+      {
+        "severity": "warning",
+        "code": "bad_number",
+        "line": 103,
+        "table": "TASK",
+        "message": "A1300: total_float_hr_cnt is \"N/A\", not a number; float treated as unknown"
+      },
+      {
+        "severity": "error",
+        "code": "duplicate_key",
+        "line": 134,
+        "table": "TASK",
+        "message": "task_id 75 (A1600) already defined on line 133"
+      },
+      {
+        "severity": "error",
+        "code": "dangling_link",
+        "line": 164,
+        "table": "TASKPRED",
+        "message": "Relationship points at predecessor task_id 999999, which is not a valid activity in this file"
+      },
+      {
+        "severity": "error",
+        "code": "dangling_link",
+        "line": 168,
+        "table": "TASKPRED",
+        "message": "Relationship points at successor task_id 14, which is not a valid activity in this file"
+      },
+      {
+        "severity": "error",
+        "code": "dangling_link",
+        "line": 169,
+        "table": "TASKPRED",
+        "message": "Relationship points at predecessor task_id 14, which is not a valid activity in this file"
+      },
+      {
+        "severity": "error",
+        "code": "dangling_link",
+        "line": 177,
+        "table": "TASKPRED",
+        "message": "Relationship points at successor task_id 25, which is not a valid activity in this file"
+      },
+      {
+        "severity": "error",
+        "code": "dangling_link",
+        "line": 178,
+        "table": "TASKPRED",
+        "message": "Relationship points at predecessor task_id 25, which is not a valid activity in this file"
+      }
+    ],
+    "checks": {
+      "missingLinks": {
+        "count": 13,
+        "noPredecessor": 7,
+        "noSuccessor": 8,
+        "findings": [
+          {
+            "line": 72,
+            "code": "A1000",
+            "name": "Mau & Ago business",
+            "status": "Active",
+            "detail": "No predecessor and no successor",
+            "floatDays": 125
+          },
+          {
+            "line": 73,
+            "code": "A1010",
+            "name": "Define business vision",
+            "status": "NotStart",
+            "detail": "No predecessor",
+            "floatDays": 0
+          },
+          {
+            "line": 78,
+            "code": "A1060",
+            "name": "Identify needed resources",
+            "status": "NotStart",
+            "detail": "No successor",
+            "floatDays": 0
+          },
+          {
+            "line": 79,
+            "code": "A1070",
+            "name": "Identify operating cost elements",
+            "status": "NotStart",
+            "detail": "No predecessor",
+            "floatDays": 0
+          },
+          {
+            "line": 81,
+            "code": "A1090",
+            "name": "Identify on-going business purchase opportunities",
+            "status": "NotStart",
+            "detail": "No successor",
+            "floatDays": 0
+          },
+          {
+            "line": 83,
+            "code": "A1110",
+            "name": "Summarize business approach",
+            "status": "NotStart",
+            "detail": "No predecessor",
+            "floatDays": 0
+          },
+          {
+            "line": 87,
+            "code": "A1150",
+            "name": "Evaluate realistic initial market share",
+            "status": "NotStart",
+            "detail": "No successor",
+            "floatDays": 108
+          },
+          {
+            "line": 91,
+            "code": "A1190",
+            "name": "Review and modify the strategic plan",
+            "status": "NotStart",
+            "detail": "No successor",
+            "floatDays": 0
+          },
+          {
+            "line": 94,
+            "code": "A1210",
+            "name": "Access available information",
+            "status": "NotStart",
+            "detail": "No predecessor",
+            "floatDays": 0
+          },
+          {
+            "line": 122,
+            "code": "A1490",
+            "name": "Develop cash-flow projection",
+            "status": "NotStart",
+            "detail": "No successor",
+            "floatDays": 0
+          },
+          {
+            "line": 123,
+            "code": "A1500",
+            "name": "Identify licensing and permitting requirements",
+            "status": "NotStart",
+            "detail": "No predecessor and no successor",
+            "floatDays": 0
+          },
+          {
+            "line": 124,
+            "code": "A1510",
+            "name": "Develop startup plan",
+            "status": "NotStart",
+            "detail": "No predecessor",
+            "floatDays": 0
+          },
+          {
+            "line": 156,
+            "code": "A1820",
+            "name": "Start up the business",
+            "status": "NotStart",
+            "detail": "No successor",
+            "floatDays": 0
+          }
+        ]
+      },
+      "negativeFloat": {
+        "count": 2,
+        "findings": [
+          {
+            "line": 113,
+            "code": "A1400",
+            "name": "Describe the market",
+            "status": "NotStart",
+            "detail": "-10 d total float",
+            "floatDays": -10
+          },
+          {
+            "line": 114,
+            "code": "A1410",
+            "name": "Describe the new business",
+            "status": "NotStart",
+            "detail": "-3 d total float",
+            "floatDays": -3
+          }
+        ]
+      },
+      "highFloat": {
+        "count": 5,
+        "thresholdDays": 44,
+        "findings": [
+          {
+            "line": 72,
+            "code": "A1000",
+            "name": "Mau & Ago business",
+            "status": "Active",
+            "detail": "125 d total float",
+            "floatDays": 125
+          },
+          {
+            "line": 84,
+            "code": "A1120",
+            "name": "Assess market size and stability",
+            "status": "NotStart",
+            "detail": "110 d total float",
+            "floatDays": 110
+          },
+          {
+            "line": 85,
+            "code": "A1130",
+            "name": "Estimate the competition",
+            "status": "NotStart",
+            "detail": "110 d total float",
+            "floatDays": 110
+          },
+          {
+            "line": 86,
+            "code": "A1140",
+            "name": "Assess needed resource availability",
+            "status": "NotStart",
+            "detail": "108 d total float",
+            "floatDays": 108
+          },
+          {
+            "line": 87,
+            "code": "A1150",
+            "name": "Evaluate realistic initial market share",
+            "status": "NotStart",
+            "detail": "108 d total float",
+            "floatDays": 108
+          }
+        ]
+      }
+    },
+    "floatBuckets": [
+      {
+        "label": "Negative",
+        "count": 2,
+        "flag": "negative"
+      },
+      {
+        "label": "0 (critical)",
+        "count": 67,
+        "flag": null
+      },
+      {
+        "label": "0–10 d",
+        "count": 3,
+        "flag": null
+      },
+      {
+        "label": "10–44 d",
+        "count": 3,
+        "flag": null
+      },
+      {
+        "label": "Over 44 d",
+        "count": 5,
+        "flag": "high"
+      }
+    ],
+    "floatUnknown": 1,
+    "synthetic": true
+  }
+]
